@@ -1,5 +1,5 @@
 build website:
-    image: overn/bun 
+    image: overn/bun:latest
     script:
         - bun run build 
         - bun run start  
