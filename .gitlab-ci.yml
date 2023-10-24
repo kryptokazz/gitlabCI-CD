@@ -1,9 +1,8 @@
-build websites:
-
+build website:
     image: oven/bun:alpine
     script:
-        - bun run build
-        - bun run install 
+        - bun run build 
+        - bun run start
     artifacts:
-        paths: /
-   
+        paths:
+        - /
