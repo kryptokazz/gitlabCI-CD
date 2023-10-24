@@ -1,5 +1,15 @@
 build websites:
-    image: node:20
-    script: 
-        - yarn install
-        - yarn build
+
+    image: oven/bun:latest
+
+    stages:
+    - build
+
+    build:
+    stage: build
+    script:
+        - bun install
+        - bun run build
+    artifacts:
+        paths:
+        - public
