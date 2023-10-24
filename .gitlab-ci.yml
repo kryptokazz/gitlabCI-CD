@@ -3,12 +3,13 @@ stages:
 
 build-app:
   stage: build
-  image: alpine:latest
+  image: oven/bun:alpine
   script:
-    - apt-get update -y
-    - apt-get install -y curl
-    - apt-get install unzip
+    - apk add --no-cache curl
     - curl -sL https://bun.sh/install | bash
     - source /root/.bashrc
     - bun install
     - bun run build
+  artifacts:
+    paths:
+      - build/
