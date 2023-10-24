@@ -8,8 +8,8 @@ build websites:
     build:
     stage: build
     script:
-        - bun install
         - bun run build
+        - bun run install 
     artifacts:
         paths:
         - public
