@@ -4,4 +4,6 @@ build websites:
     script:
         - bun run build
         - bun run install 
+    artifacts:
+        paths: /
    
