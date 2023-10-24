@@ -1,6 +1,7 @@
 build website:
     image: oven/bun:alpine
     script:
+        - bun install 
         - bun run build 
         - bun run start
     artifacts:
