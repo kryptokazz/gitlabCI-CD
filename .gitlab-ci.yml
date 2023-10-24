@@ -1,6 +1,8 @@
 build website:
-    image: oven/bun:centos
-    script:
-        - bun install 
-        - bun run build 
-        - bun run start
+  image: oven/bun:ubuntu-latest
+  script:
+    - sudo apt-get update
+    - sudo apt-get install -y linux-generic-hwe-20.04
+    - bun install 
+    - bun run build 
+    - bun run start
