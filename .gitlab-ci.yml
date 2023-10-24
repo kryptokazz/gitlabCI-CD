@@ -1,6 +1,6 @@
 build website:
   image: oven/bun:debian
   script:
-    - bun install 
+    - bun install --verbose 
     - bun run build 
     - bun run start
