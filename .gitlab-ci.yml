@@ -8,6 +8,7 @@ build-app:
     - apt-get update -y
     - apt-get install -y curl
     - apt-get install unzip
+    - source /root/.bashrc
     - curl -sL https://bun.sh/install | bash
     - bun install
     - bun run build
