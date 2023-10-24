@@ -7,8 +7,6 @@ build-app:
   script:
     - apt-get update -y
     - apt-get install -y curl
-    - curl -sL https://deb.nodesource.com/setup_14.x | bash -
-    - apt-get install -y nodejs
-    - npm install -g bun
+    - curl -sL https://bun.sh/install | bash
     - bun install
     - bun run build
