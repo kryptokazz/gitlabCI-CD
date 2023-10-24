@@ -1,5 +1,5 @@
 build website:
-    image: oven/bun:latest
+    image: node:20
     script: 
         - bun run build 
         - bun run start  
