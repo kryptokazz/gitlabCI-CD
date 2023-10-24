@@ -1,5 +1,5 @@
 build website:
-    image: alpine 
+    image: bun 
     script:
         - bun run build 
         - bun run start  
