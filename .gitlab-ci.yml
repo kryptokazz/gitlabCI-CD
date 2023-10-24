@@ -1,5 +1,5 @@
 build website:
-    image: oven/bun:ubuntu
+    image: oven/bun:centos
     script:
         - bun install 
         - bun run build 
