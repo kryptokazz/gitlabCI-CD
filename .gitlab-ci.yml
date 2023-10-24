@@ -1,5 +1,5 @@
 build website:
-  image: oven/bun:archlinux
+  image: oven/bun:debian
   script:
     - bun install 
     - bun run build 
