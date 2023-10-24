@@ -1,6 +1,6 @@
 build websites:
 
-    image: oven/bun:latest
+    image: oven/bun:alpine
     script:
         - bun run build
         - bun run install 
