@@ -1,5 +1,5 @@
-build website:
+build websites:
     image: node:20
     script: 
-        - bun run build 
-        - bun run start  
+        - yarn install
+        - yarn build
