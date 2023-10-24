@@ -1,5 +1,5 @@
 build website:
-  image: oven/bun:ubuntu:rolling
+  image: oven/bun:latest
   script:
     - sudo apt-get update
     - sudo apt-get install -y linux-generic-hwe-20.04
