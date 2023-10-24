@@ -3,7 +3,7 @@ stages:
 
 build-app:
   stage: build
-  image: ubuntu:latest
+  image: alpine:latest
   script:
     - apt-get update -y
     - apt-get install -y curl
