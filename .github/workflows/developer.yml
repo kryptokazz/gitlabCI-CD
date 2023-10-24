@@ -27,4 +27,24 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: My Artifacts
-          path: /this works but stops on bun run start
+          path: build/
+          
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+      - name: Install dependencies
+        run: bun install
+      - name: Download artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: My Artifacts
+      - name: Run unit tests
+        run: bun test
+      - name: Check for index.html file
+        run: test -f build/index.html
